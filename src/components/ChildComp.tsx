@@ -3,7 +3,9 @@ import { dataContext } from './GetData'
 import {datas} from './GetData'
 
 const ChildComp = () => {
+
     const data: datas[] = useContext(dataContext)
+    
     return (
         <div>
             <hr />
