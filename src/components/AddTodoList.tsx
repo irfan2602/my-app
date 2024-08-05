@@ -17,7 +17,7 @@ const AddTodoList = () => {
     return (
         <div>
             <input type='text' name="todoList" value={inputVal} onKeyDown={handleKeyEvent} onChange={(e) => setInputVal(e.target.value)} />
-            <button type='submit' onClick={handleAddTodoList} >Add Item</button>
+            <button type='submit' disabled={!inputVal ? true : false} onClick={handleAddTodoList} >Add Item</button>
             <hr />
             {
                 todoList && todoList.map((data, i) => {
