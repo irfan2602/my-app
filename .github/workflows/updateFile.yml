@@ -13,7 +13,7 @@ uses: actions/checkout@v2
 -name: Check if trackingMetadata.ts was updated
 id: check-file
 run: |
-if git diff --name-only ${{github.event.before}} ${{github.sha}} | grep -q 'trackingMetadata.ts'; then
+## if git diff --name-only ${{github.event.before}} ${{github.sha}} | grep -q 'trackingMetadata.ts'; then
 echo "file_changed=true" >> $GITHUB_ENV
 else
 echo "file_changed=false" $GITHUB_ENV
