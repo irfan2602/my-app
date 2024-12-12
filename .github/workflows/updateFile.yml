@@ -29,5 +29,5 @@ curl -X PUT \
 "message": "Update wiki page due to trackingMetadata.ts file changed",
 "content": "$(base64 -w 0 trackingMetadata.ts)"
 }' \
-https://api.github.com/repos/${{github.repository}}/wiki/trackingMetadataPage.md
+https://api.github.com/repos/${{github.repository}}/wiki/trackingMetadata.md
 
